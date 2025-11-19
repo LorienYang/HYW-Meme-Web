@@ -3,18 +3,51 @@
         <div
                 class="MeMe-Item"
                 v-for="(img,idx) in imageList"
+                :key="idx"
                 :style="{ animationDelay: idx * 0.25 + 's' }"
         >
             <div class="MeMe-Item-Box">
                 <div class="MeMe-Item-Img">
-                    <img :src="img" alt="" loading="lazy">
+                    <img
+                            :src="img"
+                            alt="点击放大"
+                            loading="lazy"
+                            @click="openLightbox(idx)"
+                            style="cursor: pointer;"
+                    >
                 </div>
             </div>
         </div>
     </div>
+
+    <vue-easy-lightbox
+            :visible="visibleRef"
+            :imgs="imageList"
+            :index="indexRef"
+            @hide="onHide"
+    />
 </template>
+
 <script setup lang="ts">
+import { ref } from 'vue';
+
 import {imageList} from "../assets/config/images.ts";
+
+//图片放大实现
+import VueEasyLightbox from 'vue-easy-lightbox';
+const visibleRef = ref(false);
+const indexRef = ref(0);
+/**
+ * @param index 被点击图片的索引
+ */
+const openLightbox = (index: number) => {
+    indexRef.value = index;
+    visibleRef.value = true;
+};
+const onHide = () => {
+    visibleRef.value = false;
+};
+
 </script>
 
 <style scoped>
