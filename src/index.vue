@@ -32,7 +32,7 @@ const currentYear = new Date().getFullYear()
     align-items: center;
     box-sizing: border-box;
     .Nav {
-        z-index: 1;
+        z-index: 999;
         box-sizing: border-box;
         display: flex;
         align-items: center;
