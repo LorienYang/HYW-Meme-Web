@@ -13,3 +13,11 @@ body {
         background-position: 0 50%;
     }
 }
+
+/* 禁止显示滚动条 */
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scrollbar-width: none;
+}
