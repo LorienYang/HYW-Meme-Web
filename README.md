@@ -3,7 +3,7 @@
 ## 何意味？
 一个简单、美观的表情包预览和下载网站
 [体验界面](https://www.何意味.shop)
-![示例](https://github.com/LorienYang/HYW-Meme-Web/blob/develop/public/HYW-README-1128-1.png)
+![示例](https://github.com/LorienYang/HYW-Meme-Web/blob/master/public/HYW-README-1128-1.png)
 [项目灵感与部分源代码来源](https://github.com/ImYsen/paoshoushouGIF-web)
 
 ---
@@ -57,4 +57,4 @@ vite
 - 本网站仅提供表情包预览与下载，版权归原作者所有
 - 如有侵权，请通过 GitHub Issues 联系我们
 - 欢迎通过 Pull Request 贡献更多表情包内容
-- 网站域名由[Kimimaybe29](https://www.kimimaybe29.top)提供
+- 网站域名由[Kimimaybe29](https://github.com/Kimimaybe29)提供
