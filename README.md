@@ -28,14 +28,14 @@ git clone https://github.com/LorienYang/HYW-Meme-Web.git
 
 2. 安装[node.js](https://nodejs.org/en/download)
 
-3. 在克隆的目录打开控制台或cmd，输入
+3. 在克隆的目录打开控制台(Linux or Macos)或PowerShell(Windows)，输入
 ```bash
 npm install
 ``` 
 
 4. 运行完成后，输入
 ```bash
-vite
+npm run dev
 ```
 
 5. 本地部署请用浏览器访问 **127.0.0.1:5173** ,远程服务器需要开启反向代理。

@@ -8,7 +8,6 @@ const currentYear = new Date().getFullYear()
             <h1>何意味？</h1>
             <div class="Menu">
                 <router-link to="/" class="Button">主页</router-link>
-                <router-link to="/guide" class="Button">添加表情包</router-link>
                 <router-link to="/about" class="Button">关于</router-link>
             </div>
         </div>
