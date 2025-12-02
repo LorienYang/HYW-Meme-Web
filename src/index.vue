@@ -8,6 +8,7 @@ const currentYear = new Date().getFullYear()
             <h1>何意味？</h1>
             <div class="Menu">
                 <router-link to="/" class="Button">主页</router-link>
+                <router-link to="/guide" class="Button">添加表情包</router-link>
                 <router-link to="/about" class="Button">关于</router-link>
             </div>
         </div>
@@ -16,7 +17,6 @@ const currentYear = new Date().getFullYear()
         </div>
         <div class="Footer">
             <span>&copy; {{currentYear}} <a href="https://github.com/LorienYang">Lorien Yang</a> All rights reserved.</span>
-            <span>域名由 <a href="https://github.com/Kimimaybe29">Kimimaybe29</a> 提供</span>
             <span>声明：本网站仅提供表情包预览与下载，版权归原作者所有。</span>
             <span>
                 如有侵权，请<a href="mailto:postmaster@sakuraonline.cn">联系我们</a>。
