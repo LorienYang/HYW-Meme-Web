@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import MeME from "./components/MeME.vue";
 const currentYear = new Date().getFullYear()
 </script>
 
@@ -8,11 +7,12 @@ const currentYear = new Date().getFullYear()
         <div class="Nav">
             <h1>何意味？</h1>
             <div class="Menu">
-                <a href="/">主页</a>
+                <router-link to="/" class="Button">主页</router-link>
+                <router-link to="/about" class="Button">关于</router-link>
             </div>
         </div>
         <div class="何意味">
-            <MeME />
+            <RouterView/>
         </div>
         <div class="Footer">
             <span>&copy; {{currentYear}} <a href="https://github.com/LorienYang">Lorien Yang</a> All rights reserved.</span>
@@ -21,6 +21,7 @@ const currentYear = new Date().getFullYear()
             <span>
                 如有侵权，请<a href="mailto:postmaster@sakuraonline.cn">联系我们</a>。
                 您可以通过 <a href="https://github.com/LorienYang/HYW-Meme-Web/pulls">提交PR</a>丰富本站点内容</span>
+            <span>域名由 <a href="https://github.com/Kimimaybe29">Kimimaybe29</a> 提供</span>
         </div>
     </div>
 </template>
@@ -49,13 +50,17 @@ const currentYear = new Date().getFullYear()
             font-size: 24px;
             padding: 0 0 0 20px;
         }
-        a {
-            font-size: 20px;
-            text-decoration: none;
-            color: black;
-        }
         .Menu {
+            display: flex;
             padding: 0 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                color: black;
+            }
         }
     }
 }
