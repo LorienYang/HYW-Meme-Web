@@ -3,6 +3,9 @@
         <h1>关于</h1>
         <ul>
         <li>
+        <p><a href="https://github.com/LorienYang/HYW-Meme-Web">点此访问网站github仓库</a></p>
+        </li>
+        <li>
         <p>一个提供何意味表情包下载的网站，由<a href="https://github.com/LorienYang">LorienYang</a>制作</p>
         </li>
         <li>
