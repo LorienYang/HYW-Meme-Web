@@ -5,9 +5,9 @@ const currentYear = new Date().getFullYear()
 <template>
     <div class="Web-Control">
         <div class="Nav">
-            <a href="/">
+            <router-link to="/" class="Button">
             <img src="/src/assets/imgs/nav/HYW-Website-Nav.webp" alt="何意味？" />
-            </a>
+            </router-link>
             <div class="Menu">
                 <router-link to="/" class="Button">主页</router-link>
                 <router-link to="/about" class="Button">关于</router-link>
