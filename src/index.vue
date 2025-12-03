@@ -5,7 +5,9 @@ const currentYear = new Date().getFullYear()
 <template>
     <div class="Web-Control">
         <div class="Nav">
-            <h1>何意味？</h1>
+            <a href="/">
+            <img src="/src/assets/imgs/nav/HYW-Website-Nav.webp" alt="何意味？" />
+            </a>
             <div class="Menu">
                 <router-link to="/" class="Button">主页</router-link>
                 <router-link to="/about" class="Button">关于</router-link>
@@ -45,10 +47,15 @@ const currentYear = new Date().getFullYear()
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        img {
+            margin-left: 20px;
+            width: 132px;
+            height: 50px;
+        };
         h1 {
             font-size: 24px;
             padding: 0 0 0 20px;
-        }
+        };
         .Menu {
             display: flex;
             padding: 0 20px;
