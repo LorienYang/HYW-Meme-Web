@@ -2,7 +2,6 @@
 
 ## 何意味？
 一个简单、美观的表情包预览和下载网站
-[体验界面](https://www.何意味.shop)
 ![示例](https://github.com/LorienYang/HYW-Meme-Web/blob/master/public/HYW-README-1128-1.png)
 [项目灵感与部分源代码来源](https://github.com/ImYsen/paoshoushouGIF-web)
 
